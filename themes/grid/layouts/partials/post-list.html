@@ -1,276 +1,284 @@
-    
-    <!-- Hero Section Start -->
-    <div class="hero-section section fix">
-        <div class="container-fluid p-0">
-            <div class="row">
-                <div class="col">
-                    <div class="row row-1">
+<!-- Hero Section Start -->
+<div class="hero-section section fix">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col">
+                <div class="row row-1">
 
-                        <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                            <!-- Overlay Post Start -->{{ range first 1 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages }}
-                            <div class="post post-large post-overlay hero-post">
-                                <div class="post-wrap">
+                        <!-- Overlay Post Start -->{{ range first 1 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages }}
+                        <div class="post post-large post-overlay hero-post">
+                            <div class="post-wrap">
 
-                                    <!-- Image -->
-                                    <div class="image">
-                                        <img src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}" alt="{{ .Title | markdownify }}">
-                                    </div>
+                                <!-- Image -->
+                                <div class="image">
+                                    <img src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}"
+                                        alt="{{ .Title | markdownify }}">
+                                </div>
 
-                                    <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
-                                    <span class="category politic">{{ . | lower }}</span>
-                                    {{ end }}{{ end }}
+                                <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
+                                <span class="category politic">{{ . | lower }}</span>
+                                {{ end }}{{ end }}
 
-                                    <!-- Content -->
-                                    <div class="content">
+                                <!-- Content -->
+                                <div class="content">
 
-                                        <!-- Title -->
-                                        <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
-
-                                    </div>
+                                    <!-- Title -->
+                                    <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
 
                                 </div>
-                            </div><!-- Overlay Post End -->{{- end -}}
-                                
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 col-12">
+                            </div>
+                        </div><!-- Overlay Post End -->{{- end -}}
 
-                            <!-- Overlay Post Start -->{{ range first 1 ( after 1 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
-                            <div class="post post-large post-overlay hero-post">
-                                <div class="post-wrap">
+                    </div>
 
-                                    <!-- Image -->
-                                    <div class="image">
-                                        <img src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
-                                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                                    <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
-                                    <span class="category fashion">{{ . | lower }}</span>
-                                    {{ end }}{{ end }}
+                        <!-- Overlay Post Start -->{{ range first 1 ( after 1 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
+                        <div class="post post-large post-overlay hero-post">
+                            <div class="post-wrap">
 
-                                    <!-- Content -->
-                                    <div class="content">
+                                <!-- Image -->
+                                <div class="image">
+                                    <img
+                                        src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
+                                </div>
 
-                                        <!-- Title -->
-                                        <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+                                <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
+                                <span class="category fashion">{{ . | lower }}</span>
+                                {{ end }}{{ end }}
 
-                                    </div>
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Title -->
+                                    <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
 
                                 </div>
-                            </div><!-- Overlay Post End -->{{- end -}}
-                                
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 col-12">
+                            </div>
+                        </div><!-- Overlay Post End -->{{- end -}}
 
-                            <!-- Overlay Post Start -->{{ range first 1 ( after 2 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
-                            <div class="post post-large post-overlay hero-post">
-                                <div class="post-wrap">
+                    </div>
 
-                                    <!-- Image -->
-                                    <div class="image">
-                                        <img src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
-                                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                                    <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
-                                    <span class="category sports">{{ . | lower }}</span>
-                                    {{ end }}{{ end }}
+                        <!-- Overlay Post Start -->{{ range first 1 ( after 2 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
+                        <div class="post post-large post-overlay hero-post">
+                            <div class="post-wrap">
 
-                                    <!-- Content -->
-                                    <div class="content">
+                                <!-- Image -->
+                                <div class="image">
+                                    <img
+                                        src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
+                                </div>
 
-                                        <!-- Title -->
-                                        <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+                                <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
+                                <span class="category sports">{{ . | lower }}</span>
+                                {{ end }}{{ end }}
 
-                                    </div>
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Title -->
+                                    <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
 
                                 </div>
-                            </div><!-- Overlay Post End -->{{- end -}}
-                                
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 col-12">
+                            </div>
+                        </div><!-- Overlay Post End -->{{- end -}}
 
-                            <!-- Overlay Post Start -->{{ range first 1 ( after 3 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
-                            <div class="post post-large post-overlay hero-post">
-                                <div class="post-wrap">
+                    </div>
 
-                                    <!-- Image -->
-                                    <div class="image">
-                                        <img src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
-                                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                                    <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
-                                    <span class="category gadgets">{{ . | lower }}</span>
-                                    {{ end }}{{ end }}
+                        <!-- Overlay Post Start -->{{ range first 1 ( after 3 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
+                        <div class="post post-large post-overlay hero-post">
+                            <div class="post-wrap">
 
-                                    <!-- Content -->
-                                    <div class="content">
+                                <!-- Image -->
+                                <div class="image">
+                                    <img
+                                        src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
+                                </div>
 
-                                        <!-- Title -->
-                                        <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+                                <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
+                                <span class="category gadgets">{{ . | lower }}</span>
+                                {{ end }}{{ end }}
 
-                                    </div>
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Title -->
+                                    <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
 
                                 </div>
-                            </div><!-- Overlay Post End -->{{- end -}}
 
-                        </div>
+                            </div>
+                        </div><!-- Overlay Post End -->{{- end -}}
 
-                        <div class="col-lg-4 col-md-6 col-12">
+                    </div>
 
-                            <!-- Overlay Post Start -->{{ range first 1 ( after 4 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
-                            <div class="post post-large post-overlay hero-post">
-                                <div class="post-wrap">
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                                    <!-- Image -->
-                                    <div class="image">
-                                        <img src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
-                                    </div>
+                        <!-- Overlay Post Start -->{{ range first 1 ( after 4 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
+                        <div class="post post-large post-overlay hero-post">
+                            <div class="post-wrap">
 
-                                    <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
-                                    <span class="category education">{{ . | lower }}</span>
-                                    {{ end }}{{ end }}
+                                <!-- Image -->
+                                <div class="image">
+                                    <img
+                                        src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
+                                </div>
 
-                                    <!-- Content -->
-                                    <div class="content">
+                                <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
+                                <span class="category education">{{ . | lower }}</span>
+                                {{ end }}{{ end }}
 
-                                        <!-- Title -->
-                                        <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+                                <!-- Content -->
+                                <div class="content">
 
-                                    </div>
+                                    <!-- Title -->
+                                    <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
 
                                 </div>
-                            </div><!-- Overlay Post End -->{{- end -}}
-                                
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 col-12">
+                            </div>
+                        </div><!-- Overlay Post End -->{{- end -}}
 
-                            <!-- Overlay Post Start -->{{ range first 1 ( after 5 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
-                            <div class="post post-large post-overlay hero-post">
-                                <div class="post-wrap">
+                    </div>
 
-                                    <!-- Image -->
-                                    <div class="image">
-                                        <img src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
-                                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                                    <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
-                                    <span class="category politic">{{ . | lower }}</span>
-                                    {{ end }}{{ end }}
+                        <!-- Overlay Post Start -->{{ range first 1 ( after 5 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
+                        <div class="post post-large post-overlay hero-post">
+                            <div class="post-wrap">
 
-                                    <!-- Content -->
-                                    <div class="content">
+                                <!-- Image -->
+                                <div class="image">
+                                    <img
+                                        src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
+                                </div>
 
-                                        <!-- Title -->
-                                        <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+                                <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
+                                <span class="category politic">{{ . | lower }}</span>
+                                {{ end }}{{ end }}
 
-                                    </div>
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Title -->
+                                    <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
 
                                 </div>
-                            </div><!-- Overlay Post End -->{{- end -}}
-                                
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 col-12">
+                            </div>
+                        </div><!-- Overlay Post End -->{{- end -}}
 
-                            <!-- Overlay Post Start -->{{ range first 1 ( after 6 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
-                            <div class="post post-large post-overlay hero-post">
-                                <div class="post-wrap">
+                    </div>
 
-                                    <!-- Image -->
-                                    <div class="image">
-                                        <img src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
-                                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                                    <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
-                                    <span class="category fashion">{{ . | lower }}</span>
-                                    {{ end }}{{ end }}
+                        <!-- Overlay Post Start -->{{ range first 1 ( after 6 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
+                        <div class="post post-large post-overlay hero-post">
+                            <div class="post-wrap">
 
-                                    <!-- Content -->
-                                    <div class="content">
+                                <!-- Image -->
+                                <div class="image">
+                                    <img
+                                        src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
+                                </div>
 
-                                        <!-- Title -->
-                                        <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+                                <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
+                                <span class="category fashion">{{ . | lower }}</span>
+                                {{ end }}{{ end }}
 
-                                    </div>
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Title -->
+                                    <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
 
                                 </div>
-                            </div><!-- Overlay Post End -->{{- end -}}
-                                
-                        </div>
 
-                        <div class="col-lg-4 col-md-6 col-12">
+                            </div>
+                        </div><!-- Overlay Post End -->{{- end -}}
 
-                            <!-- Overlay Post Start -->{{ range first 1 ( after 7 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
-                            <div class="post post-large post-overlay hero-post">
-                                <div class="post-wrap">
+                    </div>
 
-                                    <!-- Image -->
-                                    <div class="image">
-                                        <img src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
-                                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                                    <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
-                                    <span class="category sports">{{ . | lower }}</span>
-                                    {{ end }}{{ end }}
+                        <!-- Overlay Post Start -->{{ range first 1 ( after 7 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
+                        <div class="post post-large post-overlay hero-post">
+                            <div class="post-wrap">
 
-                                    <!-- Content -->
-                                    <div class="content">
+                                <!-- Image -->
+                                <div class="image">
+                                    <img
+                                        src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
+                                </div>
 
-                                        <!-- Title -->
-                                        <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+                                <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
+                                <span class="category sports">{{ . | lower }}</span>
+                                {{ end }}{{ end }}
 
-                                    </div>
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Title -->
+                                    <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
 
                                 </div>
-                            </div><!-- Overlay Post End -->{{- end -}}
-                                
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12">
 
-                            <!-- Overlay Post Start -->{{ range first 1 ( after 8 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
-                            <div class="post post-large post-overlay hero-post">
-                                <div class="post-wrap">
+                            </div>
+                        </div><!-- Overlay Post End -->{{- end -}}
 
-                                    <!-- Image -->
-                                    <div class="image">
-                                        <img src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
-                                    </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                                    <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
-                                    <span class="category education">{{ . | lower }}</span>
-                                    {{ end }}{{ end }}
+                        <!-- Overlay Post Start -->{{ range first 1 ( after 8 (.Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) 9).Pages ) }}
+                        <div class="post post-large post-overlay hero-post">
+                            <div class="post-wrap">
 
-                                    <!-- Content -->
-                                    <div class="content">
+                                <!-- Image -->
+                                <div class="image">
+                                    <img
+                                        src="{{ if eq .Params.Image "" }}https://placeholder.pics/svg/320x160{{else}}{{ .Params.Image}}{{end}}">
+                                </div>
 
-                                        <!-- Title -->
-                                        <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
+                                <!-- Category -->{{with .Params.tags }}{{ range first 1 . }}
+                                <span class="category education">{{ . | lower }}</span>
+                                {{ end }}{{ end }}
 
-                                    </div>
+                                <!-- Content -->
+                                <div class="content">
+
+                                    <!-- Title -->
+                                    <h4 class="title"><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h4>
 
                                 </div>
-                            </div><!-- Overlay Post End -->{{- end -}}
-                                
-                        </div>
+
+                            </div>
+                        </div><!-- Overlay Post End -->{{- end -}}
+
                     </div>
                 </div>
             </div>
         </div>
-    </div><!-- Hero Section End -->
+    </div>
+</div><!-- Hero Section End -->
 
-        <!-- Popular Section Start -->
-        <div class="popular-section section bg-dark pt-30 pb-30">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="container d-flex align-items-center justify-content-center" style="font-size:120%">
-                            {{ partial "pagination.html" . }}
-                        </div>
-                    </div>
+<!-- Popular Section Start -->
+<div class="popular-section section bg-dark pt-30 pb-30">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="container d-flex align-items-center justify-content-center" style="font-size:120%">
+                    {{ partial "pagination.html" . }}
                 </div>
             </div>
-        </div><!-- Popular Section End -->
+        </div>
+    </div>
+</div><!-- Popular Section End -->

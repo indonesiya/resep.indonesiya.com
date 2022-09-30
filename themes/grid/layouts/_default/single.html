@@ -14,9 +14,7 @@
                         <!-- Title -->
                         <h3 class="title mb-0">{{ .Title }}</h3>
 
-                        <div class="mb-1">
-                            <div>{{ partial "ads-below-title.html" . }}</div>
-                        </div>
+                        <div class="mb-1">{{ partial "ads-below-title.html" . }}</div>
 
                         <!-- Meta -->
                         <div class="tags-social float-left border-0 mt-1 mb-0 p-0">
@@ -36,9 +34,7 @@
                             {{ replace (replace .Content "<!--inarticleads1-->" (partial "ads-in-article1.html" .)) "<!--inarticleads2-->" (partial "ads-in-article2.html" .) | safeHTML }}
 
                         </div>
-                        <div class="mt-1">
-                            <div>{{ partial "ads-below-content.html" . }}</div>
-                        </div>
+                        <div class="mt-1">{{ partial "ads-below-content.html" . }}</div>
 
                         <div class="tags-social float-left">
 
