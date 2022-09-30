@@ -6308,3 +6308,42 @@ blockquote.blockquote.blockquote-bg p {
     max-width: 100%;
     width: auto;
 }
+
+.ads {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    overflow: hidden;
+    opacity: 1;
+    max-width: 100%;
+}
+
+#fixedban {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    float: none;
+    overflow: hidden;
+    display: scroll;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    -webkit-transform: translateZ(0);
+}
+
+a.close-fixedban {
+    cursor: pointer;
+}
+
+a.close-fixedban img {
+    vertical-align: middle;
+}
+
+.adsfixed {
+    text-align: center;
+    display: block;
+    max-width: 728px;
+    height: auto;
+    overflow: hidden;
+    margin: auto
+}
