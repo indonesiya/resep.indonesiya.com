@@ -6354,6 +6354,7 @@ a.close-fixedban img {
     background: #fff;
     border: 1px solid #f0f0f0;
     margin: 0 0 20px;
+    display: inline-block;
 }
 
 .fb-comments {
