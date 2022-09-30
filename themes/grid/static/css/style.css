@@ -6311,8 +6311,7 @@ blockquote.blockquote.blockquote-bg p {
 
 .ads {
     max-width: 100%;
-    margin: 5px auto;
-    display: inline-block;
+    padding: 10px 0;
     text-align: center;
     overflow: hidden;
 }
@@ -6339,10 +6338,59 @@ a.close-fixedban img {
 }
 
 .adsfixed {
+    background-color: #f9f9f999;
     text-align: center;
     display: block;
     max-width: 728px;
     height: auto;
     overflow: hidden;
     margin: auto
+}
+
+/*! fb comment */
+.fbbox-comments {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    margin: 0 0 20px;
+}
+
+.fb-comments {
+    width: 100% !important;
+}
+
+.fb-comments iframe[style] {
+    width: 100% !important;
+}
+
+.fb-like-box {
+    width: 100% !important;
+}
+
+.fb-like-box iframe[style] {
+    width: 100% !important;
+}
+
+.fb-comments span {
+    width: 100% !important;
+}
+
+.fb-comments iframe span[style] {
+    width: 100% !important;
+}
+
+.fb-like-box span {
+    width: 100% !important;
+}
+
+.fb-like-box iframe span[style] {
+    width: 100% !important;
+}
+
+.rich-snippet {
+    padding: 10px;
+    margin: 15px 0 0;
+    border: 3px solid #eee;
+    font-size: 12px;
 }
