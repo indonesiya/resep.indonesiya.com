@@ -1,20 +1,10 @@
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJ8JK3JDZ9"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-EJ8JK3JDZ9');
-  </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3956807637449855"
-    crossorigin="anonymous"></script>
   {{ partial "arsae-client.html" . }}
   <meta charset="utf-8">
+  <meta content='#1f2024' name='theme-color' />
+  <meta content='#1f2024' name='msapplication-navbutton-color' />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {{ partial "google-analytics.html" . }}
   {{ hugo.Generator }}
   {{ if .IsPage }}
   <meta name="description" content="{{ .Summary | markdownify | plainify | htmlUnescape }}">

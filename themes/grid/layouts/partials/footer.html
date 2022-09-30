@@ -1,14 +1,3 @@
-<div id='fixedban'>
-    <div>
-        <a id='close-fixedban' onclick='document.getElementById(&quot;fixedban&quot;).style.display = &quot;none&quot;'>
-            <img alt='close' src='/themes/grid/static/img/close.png' title='close button' />
-        </a>
-    </div>
-    <div class='adsfixed'>
-        {{ partial "ads-fixed.html" . }}
-    </div>
-</div>
-
 <!-- Footer Bottom Section Start -->
 <div class="footer-bottom-section section bg-dark">
     <div class="container">
@@ -22,8 +11,6 @@
         </div>
     </div>
 </div><!-- Footer Bottom Section End -->
-
-</div>
 
 {{ $jqueryjs := "js/vendor/jquery-1.12.0.min.js" }}<script src="{{ $jqueryjs | absURL }}"></script>
 {{ $popperminjs := "js/popper.min.js" }}<script src="{{ $popperminjs | absURL }}"></script>
