@@ -1,4 +1,4 @@
-baseURL = "https://resep-indonesiya.web.app/"
+baseURL = "https://resep.indonesiya.com/"
 languageCode = "en-us"
 title = "Resep Indonesiya"
 theme = "grid"
@@ -11,8 +11,8 @@ theme = "grid"
   post = ":slug"
 
 [params]
-  description = "Menyajikan Ribuan Olahan Masakan Terbaik di Nusantara"
-  topdescription = "Menyajikan Ribuan Olahan Masakan Terbaik di Nusantara"
+  description = "Menyajikan Berbagai Olahan Masakan Terbaik di Nusantara - Resep Indonesia"
+  topdescription = "Menyajikan berbagai Olahan Masakan Terbaik di Nusantara - Resep Indonesia"
   toptitle = "Resep Indonesiya"
   contentBackgroundColor = "#fff"
   contentLinkColor = "#007bff"
@@ -41,7 +41,7 @@ theme = "grid"
 
 [author]
     name = "Clara Bernadette"
-    homepage = "https://resep-indonesiya.web.app/"
+    homepage = "https://resep.indonesiya.com/"
     bio = "True Food Lover"
     image = "https://i.imgur.com/qNQv8nK.jpg"
 

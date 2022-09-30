@@ -3709,27 +3709,6 @@ blockquote.blockquote.blockquote-bg p {
     line-height: 28px;
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .post.post-large .post-wrap .title {
-        font-size: 22px;
-        line-height: 28px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .post.post-large .post-wrap .title {
-        font-size: 24px;
-        line-height: 28px;
-    }
-}
-
-@media only screen and (max-width: 479px) {
-    .post.post-large .post-wrap .title {
-        font-size: 14px;
-        line-height: 18px;
-    }
-}
-
 .post.post-small {
     /*-- List Style Post --*/
 }
